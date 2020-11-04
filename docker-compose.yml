@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  lamp:
+    image: mattrayner/lamp:latest-1804
+    volumes:
+      - .:/app
+      - ./data:/var/lib/mysql
+    ports:
+      - 8000:80
